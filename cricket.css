@@ -1,0 +1,217 @@
+/* video background */
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* navigation bar */
+nav{
+    position: fixed;
+    height: 50px;
+    /* background: #222; */
+    /* background-image: url(images/image2.jpg); */
+    border-image-repeat: 8px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+nav a{
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    padding-left: 23px;
+    padding-right: 23px;
+    z-index: 1;
+}
+
+nav span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95px;
+    height: 100%;
+    background: linear-gradient(45deg,rgba(25, 40, 79, 0.543),#ff33f8);
+    border-radius: 8px;
+    display: block;
+    /* display: none; */
+}
+nav a:nth-child(1):hover~span{
+    left: 0;
+    width: 95px;
+    display: block;
+}
+nav a:nth-child(2):hover~span{
+    left: 95px;
+    width: 80px;
+    display: block;
+}
+nav a:nth-child(3):hover~span{
+    left: 180px;
+    width: 90px;
+    display: block;
+}
+nav a:nth-child(4):hover~span{
+    left: 267px;
+    width: 90px;
+    display: block;
+}
+nav a:nth-child(5):hover~span{
+    left: 357px;
+    width: 80px;
+    display: block;
+}
+/* space1 */
+#space1{
+    height: 800px;
+}
+/* h1 */
+h1{
+    font-size: 100px;
+    text-align: center;
+    background: linear-gradient(45deg,rgb(25, 40, 79),#ff33f8);
+    color: white;
+}
+
+/* h2 */
+h2{
+    font-family: sans-serif;
+    color: #fff;
+    text-align: center;
+    font: 300px;
+    background-image: url(images/image1.jpg);
+}
+
+/* top plays */
+
+.top_plays{
+    display: flex;
+    overflow: scroll;
+    list-style-type: none;
+    background: rgb(220, 213, 213);
+}
+.top_plays::-webkit-scrollbar{
+    display: none;
+}
+
+.top_plays li{
+    padding: 20px;
+}
+/* videos */
+#videos{
+    display: flex;
+    justify-content: center;
+}
+
+/* iframe */
+
+#table::-webkit-scrollbar{
+    display: none;
+}
+/* #tabel{
+    display: block;
+} */
+#nav{
+    text-align: right;
+}
+
+/* youtube videos */
+
+.youtube{
+    display: flex;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.406);
+
+}
+.youtube iframe{
+    padding: 50px;
+}
+.youtube p{
+    position:relative; 
+    top: 100px;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    width: 600px;
+    height: fit-content;
+    border-radius: 4%;
+    z-index: -1;
+   
+}
+
+/* -------------PLAYERS---------------- */
+h3{
+    color: white;
+}
+
+.team_name{
+    color: rgba(0, 0, 0, 0.619);
+    text-align: center;
+    background: rgba(255, 255, 255, 0.447);
+}
+.players{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0 auto;
+    width: 1100px;
+    /* border: red; */
+}
+.players li{
+    padding: 8px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    /* background: rgba(20, 116, 212, 0.53); */
+    margin: 20px;
+    border-radius: 30px;
+    color: #fff;
+}
+.players li:hover{
+    background: rgb(20, 110, 212);
+}
+.img_enlarge{
+    border-radius: 30px;
+}
+
+/* Add a class to your image to target it in CSS */
+.img_enlarge {
+    /* Set initial styles for the image */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Define the hover effect */
+  .img_enlarge:hover {
+    /* Enlarge the image by applying a scale transform */
+    transform: scale(1.1);
+  }
+/* about team */

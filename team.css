@@ -1,0 +1,87 @@
+
+body{
+    background-image: url('images/image2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.teams{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0 auto;
+    width: 1000px;
+    border: red;
+}
+.teams li{
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+    border-radius: 20px;
+    background: #fff;
+}
+/* navigation bar */
+nav{
+    position: fixed;
+    position: relative;
+    height: 50px;
+    background: #222;
+    background-image: url(images/image2.jpg);
+    border-image-repeat: 8px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+nav a{
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    padding-left: 23px;
+    padding-right: 23px;
+    z-index: 1;
+}
+
+
+nav span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95px;
+    height: 100%;
+    background: linear-gradient(45deg,rgba(25, 40, 79, 0.543),#ff33f8);
+    border-radius: 8px;
+    /* display: none; */
+}
+nav a:nth-child(1):hover~span{
+    left: 0;
+    width: 95px;
+    display: block;
+}
+nav a:nth-child(2):hover~span{
+    left: 95px;
+    width: 80px;
+    display: block;
+}
+nav a:nth-child(3):hover~span{
+    left: 180px;
+    width: 90px;
+    display: block;
+}
+nav a:nth-child(4):hover~span{
+    left: 267px;
+    width: 90px;
+    display: block;
+}
+nav a:nth-child(5):hover~span{
+    left: 357px;
+    width: 80px;
+    display: block;
+}
