@@ -15,16 +15,17 @@ body{
 }
 .teams li{
     padding: 20px;
-    width: 100%;
+    /* width: 100%; */
+    width:900px;
     text-align: center;
     margin: 20px;
     border-radius: 20px;
     background: #fff;
 }
+
 /* navigation bar */
 nav{
     position: fixed;
-    position: relative;
     height: 50px;
     background: #222;
     background-image: url(images/image2.jpg);
