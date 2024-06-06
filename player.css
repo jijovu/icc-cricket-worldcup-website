@@ -1,117 +1,102 @@
-
-body{
+body {
     background-image: url('images/image2.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    font-family: Arial, sans-serif;
 }
 
-/* navigation bar */
-nav{
+nav {
     position: fixed;
-    position: relative;
     height: 50px;
     background: #222;
-    background-image: url(images/image2.jpg);
-    border-image-repeat: 8px;
     display: flex;
-    justify-content: left;
-    align-items: left;
+    align-items: center;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 10;
 }
-nav a{
-    position: relative;
-    display: inline-block;
+
+nav a {
     font-size: 1em;
     font-weight: 500;
     color: #fff;
     text-decoration: none;
-    padding: 15px;
-    padding-left: 23px;
-    padding-right: 23px;
-    z-index: 1;
+    padding: 15px 23px;
 }
 
-nav span{
+nav span {
     position: absolute;
     top: 0;
     left: 0;
-    width: 95px;
     height: 100%;
-    background: linear-gradient(45deg,rgba(25, 40, 79, 0.543),#ff33f8);
+    background: linear-gradient(45deg, rgba(25, 40, 79, 0.543), #ff33f8);
     border-radius: 8px;
-    /* display: none; */
+    display: none;
 }
-nav a:nth-child(1):hover~span{
-    left: 0;
-    width: 95px;
-    display: block;
-}
-nav a:nth-child(2):hover~span{
-    left: 95px;
-    width: 80px;
-    display: block;
-}
-nav a:nth-child(3):hover~span{
-    left: 180px;
-    width: 90px;
-    display: block;
-}
-nav a:nth-child(4):hover~span{
-    left: 267px;
-    width: 90px;
-    display: block;
-}
-nav a:nth-child(5):hover~span{
-    left: 357px;
-    width: 80px;
+
+nav a:hover ~ span {
     display: block;
 }
 
-h1{
+nav a:nth-child(1):hover ~ span { left: 0; width: 95px; }
+nav a:nth-child(2):hover ~ span { left: 95px; width: 80px; }
+nav a:nth-child(3):hover ~ span { left: 175px; width: 90px; }
+nav a:nth-child(4):hover ~ span { left: 265px; width: 90px; }
+nav a:nth-child(5):hover ~ span { left: 355px; width: 80px; }
+
+.main_container {
+    margin-top: 100px;
+    padding: 20px;
+}
+
+h1 {
     color: white;
+    text-align: center;
 }
 
-/* players list */
-
-.flex-container{
-    width: 100%;
-    height: auto;
+.flex-container {
     display: flex;
-    /* flex-direction: row-reverse; */
     flex-wrap: wrap;
-    /* justify-content: center; */
-    margin-left: 700px;
-    
+    justify-content: center;
+    gap: 20px;
 }
-a:link{
-    background-color: transparent;
+
+.team-section {
+    background-color: rgba(231, 111, 81, 0.85);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.team-section h3 {
+    color: #fff;
+}
+
+.wiki {
+    list-style: none;
+    padding: 0;
+}
+
+.wiki li {
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.75);
+    margin: 5px 0;
+    border-radius: 10px;
+}
+
+.wiki li:hover {
+    background-color: #e9c46a;
+}
+
+.wiki a {
+    color: black;
     text-decoration: none;
 }
 
-.flex-box{
-    width: 600px;
-    height: 320px;
-    background-color: rgba(167, 20, 212, 0.849);
-    text-align: center;
-    border-radius: 20px;
-    margin: 40px;
-    right: 0;
-}
-.flex-box :hover{
-    background: #62924e41;
-    transform: translateY(-10px);
-}
-.wiki{
-    color: black;
-    background-color: rgba(255, 255, 255, 0.541);
-}
-.wiki :hover{
-    color: black;
-    background-color: rgba(255, 255, 255, 0.541);
-}
-li{
-    list-style-type: none;
+.wiki a:hover {
+    color: #222;
 }

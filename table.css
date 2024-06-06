@@ -9,7 +9,7 @@ body{
 /* navigation bar */
 nav{
     position: fixed;
-    position: relative;
+    /* position: relative; */
     height: 50px;
     background: #222;
     background-image: url(images/image2.jpg);
@@ -68,6 +68,9 @@ nav a:nth-child(5):hover~span{
     left: 357px;
     width: 80px;
     display: block;
+}
+.main_container{
+    margin-top: 100px;
 }
 /* h1 */
 h1{
