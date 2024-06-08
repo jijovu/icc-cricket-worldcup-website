@@ -1,102 +1,91 @@
+/* player.css */
 body {
-    background-image: url('images/image2.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
     font-family: Arial, sans-serif;
+    background-color: #f0f0f5;
+    color: #333;
 }
 
 nav {
-    position: fixed;
-    height: 50px;
-    background: #222;
-    display: flex;
-    align-items: center;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
+    background-color: #003366;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 nav a {
-    font-size: 1em;
-    font-weight: 500;
-    color: #fff;
-    text-decoration: none;
-    padding: 15px 23px;
-}
-
-nav span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background: linear-gradient(45deg, rgba(25, 40, 79, 0.543), #ff33f8);
-    border-radius: 8px;
-    display: none;
-}
-
-nav a:hover ~ span {
+    float: left;
     display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
 }
 
-nav a:nth-child(1):hover ~ span { left: 0; width: 95px; }
-nav a:nth-child(2):hover ~ span { left: 95px; width: 80px; }
-nav a:nth-child(3):hover ~ span { left: 175px; width: 90px; }
-nav a:nth-child(4):hover ~ span { left: 265px; width: 90px; }
-nav a:nth-child(5):hover ~ span { left: 355px; width: 80px; }
+nav a:hover {
+    background-color: #0055a5;
+    color: white;
+}
 
 .main_container {
-    margin-top: 100px;
+    text-align: center;
     padding: 20px;
 }
 
-h1 {
-    color: white;
-    text-align: center;
+.main_container h1 {
+    margin-top: 20px;
+    color: #003366;
+    text-shadow: 1px 1px 2px #000000;
 }
 
 .flex-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    margin-top: 20px;
 }
 
 .team-section {
-    background-color: rgba(231, 111, 81, 0.85);
-    border-radius: 20px;
-    padding: 20px;
-    text-align: center;
     width: 300px;
+    margin: 10px;
+    margin-left: 50px;
+    padding: 20px;
+    border: 2px solid #003366;
+    border-radius: 8px;
+    background: linear-gradient(145deg, #f9f9f9, #e0e0eb);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.team-section:hover {
+    transform: scale(1.05);
 }
 
 .team-section h3 {
-    color: #fff;
+    text-align: center;
+    color: #003366;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 5px;
 }
 
 .wiki {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
 .wiki li {
-    padding: 5px;
-    background-color: rgba(255, 255, 255, 0.75);
     margin: 5px 0;
-    border-radius: 10px;
-}
-
-.wiki li:hover {
-    background-color: #e9c46a;
 }
 
 .wiki a {
-    color: black;
     text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
 .wiki a:hover {
-    color: #222;
+    text-decoration: underline;
+    color: #0055a5;
 }
